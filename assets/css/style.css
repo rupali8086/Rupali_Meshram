@@ -1,20 +1,30 @@
 
 /*html, body { height: 100%; }*/
 html, body { width: 100%; height: 100%;}
+body {font-family: 'Raleway', sans-serif;}
 
-/*body {
-    margin: 0;
-    background-color: white;
-    overflow: hidden;
-}
+h1, h3 { font-family: 'Taviraj', serif;}
 
-*/
+/*====================page 1======================================*/
 h5{font-size: 60px;
     text-align: center;
     color: #00BCD4;
     margin-top: 8%;
     width: 100%;
  }
+ .header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/*====================page 2 About======================================*/
+
 .me{
     color: black;
     text-align:center;
@@ -22,7 +32,7 @@ h5{font-size: 60px;
 .lead{
     color: white;
 }
-
+/*====================page 3 portfolio======================================*/
 .myPortfolio{
     display: inline-flex;
 }
@@ -40,16 +50,36 @@ h5{font-size: 60px;
     margin: 10px;
     display: inline-block;
 }
-.myLink{margin-left: 30%;
-margin-top: 7%;}
+/* About */
+.about {
+    padding: 250px 0;
+    width: 100%;
+    height: 100%;
+    background-color:coral;
+}
+/* ========================page 4Footer==================================== */
+footer , .panelbox{
+    padding: 100px 0;
+    width: 100%;height: 100%;
+    background-color: black;
+    color: white;
+}
+/*go to top button*/
+#to-top {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+
+.btn {
+    margin: 5px;
+
+}
+.myLink{margin-left: 30%;margin-top: 7%;}
 
 
-/* ******************************** */
-
-h1, h3 { font-family: 'Taviraj', serif;}
-
-body {font-family: 'Raleway', sans-serif;}
-
+/*=================Menu bar============================================*/
 .text-vertical-center {
     display: table-cell;
     text-align: center;
@@ -95,7 +125,7 @@ hr.small {
     max-width: 100px;
 }
 
-/* Side Menu */
+/* ===========================Side Menu========================== */
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
@@ -105,11 +135,11 @@ hr.small {
     transform: translateX(250px);
     overflow-y: auto;
     background: #222;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.9s ease 0s;
+    -moz-transition: all 0.9s ease 0s;
+    -ms-transition: all 0.9s ease 0s;
+    -o-transition: all 0.9s ease 0s;
+    transition: all 0.9s ease 0s;
 }
 
 .sidebar-nav {
@@ -169,61 +199,19 @@ hr.small {
 #sidebar-wrapper.active {
     right: 250px;
     width: 20%;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.9s ease 0s;
+    -moz-transition: all 0.9s ease 0s;
+    -ms-transition: all 0.9s ease 0s;
+    -o-transition: all 0.9s ease 0s;
+    transition: all 0.9s ease 0s;
 }
 
 .toggle {
     margin: 5px 5px 0 0;
 }
 
-/* Header */
-.header {
-    display: table;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    /*background: url("../image/dev1.jpg") no-repeat center center scroll;*/
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
 
-/* About */
-.about {
-    padding: 250px 0;
-    width: 100%;
-    height: 100%;
-    background-color:coral;
-}
-/*train schedule and add train */
-
-/*.panelBox,#services{margin-left: 50px; padding: 100px 50px;width: 100%;height: 100%;background-color: #00fff0;}*/
-
-/* Footer */
-footer , .panelbox{
-    padding: 100px 0;
-    width: 100%;height: 100%;
-    background-color: black;
-    color: white;
-}
-/*go to top button*/
-#to-top {
-  display: none;
-  position: fixed;
-  bottom: 5px;
-  right: 5px;
-}
-
-.btn {
-    margin: 5px;
-
-}
-
+/*=================mobile Responsive===============================*/
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
