@@ -14,12 +14,9 @@
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
      <!-- JQ -->
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
+    
     <!-- Firebase Reference -->
     <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
   	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <!-- Javascript -->
@@ -41,7 +38,7 @@
                <ul class="sidebar-nav">
                    <a id="menu-close" href="#" class="btn btn-light btn-lg pull-left toggle"><i class="fa fa-times"></i>&#x2612;</a>
                    <li class="sidebar-brand">
-                       <a href="#top" onclick=$("#menu-close").click();>My Portfolio</a>
+                       <a href="" onclick=$("#menu-close").click();>My Portfolio</a>
                    </li>
                    <li>
                        <a href="#top" onclick=$("#menu-close").click();>Home</a>
@@ -58,12 +55,12 @@
                </ul>
            </nav>
 
-           
+          
            <!-- Header -->
            <header id="top" class="header">
               <div class="homepage-hero-module">
                 <div class="video-container">
-                  <div class="filter">   Rupali Meshram <br><h5>I'm a Full Stack Developer</h5> </div>
+                  <div class="filter" color="orange">   Rupali Meshram <br><h5>I'm a Full Stack Developer</h5> </div>
                     <!-- <h4>Rupali Meshram</h4> -->
                     <video autoplay loop class="fillWidth">
                     <source src="assets/image/Workaholic.mp4" type="video/mp4" />
@@ -134,42 +131,41 @@
   <!-- Next page with id = footer Train Schedular -->
   <!-- Footer -->
   <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h3><strong>Rupali Meshram</strong>
-                    </h3>
-                    <p>Full satck Developer
-                        <ul class="list-unstyled">
-                            <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">rupali.meshram86@gmail.com</a>
-                            </li>
-                        </ul>
-                </div>
-             </div>
-             <div class="row myLink">
+        <div class="container ">
+          <center id="contact">
+              <a href="https://github.com/rupali8086" target="_blank" title="Github" > 
+                <img  src="assets/image/Octocat.png" alt="Git" id="social-link" />
+              </a>
+            
+              <a href="https://www.linkedin.com/in/rupali-meshram/" target="_blank" title="Linkdin"> 
+                <img src="assets/image/link.png" alt="Linkdin" id="social-link"/>
+              </a>
+            
+              <a href="https://stackoverflow.com/users/8968927/rupali" target="_blank" title="stackoverflow">
+                <img src="assets/image/stack.png" alt="Stack"  id="social-link"/>
+              </a>
+          </center>
+            
+           <center>
+              <br><br>
+              <p><strong>Rupali Meshram</strong></p>
+              <br>
+              <p>Full satck Developer</p><br>
+              <ul class="list-unstyled">
+                  <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">rupali.meshram86@gmail.com</a>
+                  </li>
+              </ul>
+              <!-- <br><br>
+              <h3>&copy;2018 Copyright Rupali Meshram</h3> -->
+            </center>
 
-            <!-- 1R2C-3R1c -->
-            <div class="col-m">
-              <a href="https://github.com/rupali8086" target="_blank"> 
-                <img  src="assets/image/github.png" alt="Git" id="social-link" />
-              </a>
-            </div>
-        
-            <!-- 1R2C-3R2c -->
-            <div class="col-m">
-              <a href="https://www.linkedin.com/in/rupali-meshram/" target="_blank"> 
-                <img src="assets/image/linkdin.png" alt="Linkdin" id="social-link"/>
-              </a>
-            </div>
-            <!-- 1R2C-3R3c -->
-            <div class="col-l">
-              <a href="https://stackoverflow.com/users/8968927/rupali" target="_blank">
-                <img src="assets/image/stackflow.png" alt="Stack"  id="social-link"/>
-              </a>
-            </div>
+            <nav class="navbar fixed-bottom navbar-dark bg-dark"">
+              <center>
+                <a class="navbar-brand" href="#">&copy;2018 Copyright Rupali Meshram</a>
+              </center>
+            </nav>
 
-          </div>
-         </div>
+        </div>
             <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i> Go To Top</a>
      </footer>
 
@@ -244,5 +240,11 @@
         // Enable map zooming with mouse scroll when the user clicks the map
         $('.map').on('click', onMapClickHandler);
     </script>
-</body>
+    <!-- tooltip for contact images -->
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+        });
+    </script>
+ </body>
 </html>
